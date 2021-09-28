@@ -133,7 +133,7 @@ ${MAKE} -C arch/riscv all
 ```
 
 含义：
-
+`${MAKE}`的含义可以参见[这里](https://stackoverflow.com/questions/38978627/what-is-the-variable-make-in-a-makefile)
 
  
 
