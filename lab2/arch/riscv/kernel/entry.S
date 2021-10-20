@@ -6,11 +6,11 @@
 .align 2
 
 trap_s:
-	#save callee-saved registers and spec
+	#save caller-saved registers and spec
 
 	# call handler_s(scause)
 	
-	# load sepc and callee-saved registers
+	# load sepc and caller-saved registers
 	
 	
 	sret
