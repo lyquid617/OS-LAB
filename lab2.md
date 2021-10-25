@@ -399,7 +399,7 @@ M模式异常需要使用的寄存器首先有lab1提到的`mstatus`，`mip`，`
    ```shell
    $ cd ~/gdbtool
    $ vim gef.py
-   (此时将https://github.com/hugsy/gef-legacy/edit/master/gef.py的代码粘贴过来)
+   (此时将https://github.com/hugsy/gef-legacy/blob/master/gef.py的代码粘贴过来)
    (然后使用:wq保存并退出vim)
    ```
 
