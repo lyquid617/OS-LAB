@@ -2,6 +2,7 @@
 #include "riscv.h"
 volatile unsigned long long ticks;
 static uint64_t timebase =1; //需要自行修改timebase为合适的值！
+extern void trigger_time_interrupt(unsigned long long stime_value);
 
 //使用"rdtime"汇编指令获得当前mtime中的值并返回。
 uint64_t get_cycles(void) {
@@ -34,7 +35,7 @@ void clock_init(void) {
 
 
 void clock_set_next_event(void) { 
-    //获取当前cpu cycles数并计算下一个时钟中断的发生时刻,通过sbi_set_timer()触发时钟中断。
+    //获取当前cpu cycles数并计算下一个时钟中断的发生时刻,通过trigger_time_interrupt()触发时钟中断。
     //your code
 
 
